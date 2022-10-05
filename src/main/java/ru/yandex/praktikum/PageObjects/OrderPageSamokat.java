@@ -12,9 +12,9 @@ public class OrderPageSamokat {
     private static final String PAGE_URL="https://qa-scooter.praktikum-services.ru/order";
     private final WebDriver driver;
     //Кнопка "Далее"
-    private final static By GO_NEXT_BUTTON = By.xpath("//*[@id='root']/div/div[2]/div[3]/button");
+    private final static By GO_NEXT_BUTTON = By.xpath(".//div[@class='Order_NextButton__1_rCA']/button[text()='Далее']");
     //Кнопка "Заказать"
-    private final static By ORDER_BUTTON = By.xpath("//*[@id='root']/div/div[2]/div[3]/button[2]");
+    private final static By ORDER_BUTTON = By.xpath(".//div[@class='Order_Buttons__1xGrp']/button[text()='Заказать']");
     // Кнопка "Да", подтверждающая оформление заказа
     private final static By YES_ORDER_BUTTON = By.cssSelector("#root > div > div.Order_Content__bmtHS > div.Order_Modal__YZ-d3 > div.Order_Buttons__1xGrp > button:nth-child(2)");
 

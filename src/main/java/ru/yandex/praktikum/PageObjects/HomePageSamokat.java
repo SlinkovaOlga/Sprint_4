@@ -48,9 +48,9 @@ public class HomePageSamokat {
     private final static By ANSWER_8 = By.cssSelector("#accordion__panel-7 > p");
 
     //Кнопка "Заказать" вверху страницы
-    private final static By TOP_ORDER_BUTTON = By.xpath("//*[@id='root']/div/div/div[1]/div[2]/button[1]");
+    private final static By TOP_ORDER_BUTTON = By.xpath(".//div[@class='Header_Nav__AGCXC']/button[text()='Заказать']");
     //Кнопка "Заказать" по середине страницы
-    private final static By MIDDLE_ORDER_BUTTON = By.xpath("//*[@id='root']/div/div/div[4]/div[2]/div[5]/button");
+    private final static By MIDDLE_ORDER_BUTTON = By.xpath(".//div[@class='Home_FinishButton__1_cWm']/button[text()='Заказать']");
 
     public HomePageSamokat(WebDriver driver) {
         this.driver = driver;
