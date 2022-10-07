@@ -16,32 +16,32 @@ public class OrderPageSamokat {
     //Кнопка "Заказать"
     private final static By ORDER_BUTTON = By.xpath(".//div[@class='Order_Buttons__1xGrp']/button[text()='Заказать']");
     // Кнопка "Да", подтверждающая оформление заказа
-    private final static By YES_ORDER_BUTTON = By.cssSelector("#root > div > div.Order_Content__bmtHS > div.Order_Modal__YZ-d3 > div.Order_Buttons__1xGrp > button:nth-child(2)");
+    private final static By YES_ORDER_BUTTON = By.xpath(".//div[@class='Order_Buttons__1xGrp']/button[text()='Да']");
 
     //Поле для обязательного ввода "Имя"
-    private final static By NAME_INPUT_FIELD = By.cssSelector("#root > div > div.Order_Content__bmtHS > div.Order_Form__17u6u > div:nth-child(1) > input");
+    private final static By NAME_INPUT_FIELD = By.xpath(".//input[@placeholder='* Имя']");
     //Поле для обязательного ввода "Фамилия"
-    private final static By SURNAME_INPUT_FIELD = By.cssSelector("#root > div > div.Order_Content__bmtHS > div.Order_Form__17u6u > div:nth-child(2) > input");
+    private final static By SURNAME_INPUT_FIELD = By.xpath(".//input[@placeholder='* Фамилия']");
     //Поле для обязательного ввода "Адрес: куда привезти заказ"
-    private final static By ADDRESS_INPUT_FIELD = By.cssSelector("#root > div > div.Order_Content__bmtHS > div.Order_Form__17u6u > div:nth-child(3) > input");
+    private final static By ADDRESS_INPUT_FIELD = By.xpath(".//input[@placeholder='* Адрес: куда привезти заказ']");
     //Поле для обязательного выбора "Станция метро"
-    private final static By METRO_SELECTION_FIELD = By.xpath("//*[@id='root']/div/div[2]/div[2]/div[4]/div/div/input");
+    private final static By METRO_SELECTION_FIELD = By.xpath(".//input[@placeholder='* Станция метро']");
     //Поле для обязательного ввода "Телефон: на него позвонит курьер"
-    private final static By PHONE_INPUT_FIELD = By.cssSelector("#root > div > div.Order_Content__bmtHS > div.Order_Form__17u6u > div:nth-child(5) > input");
+    private final static By PHONE_INPUT_FIELD = By.xpath(".//input[@placeholder='* Телефон: на него позвонит курьер']");
     //Поле для обязательного выбора "Когда привезти самокат"
-    private final static By DATE_SELECTION_FIELD = By.cssSelector("#root > div > div.Order_Content__bmtHS > div.Order_Form__17u6u > div.Order_MixedDatePicker__3qiay > div.react-datepicker-wrapper > div > input");
+    private final static By DATE_SELECTION_FIELD = By.xpath(".//input[@placeholder='* Когда привезти самокат']");
     //Поле для обязательного выбора "Срок аренды"
-    private final static By ORDER_DURATION_SELECTION_FIELD = By.xpath("//*[@id='root']/div/div[2]/div[2]/div[2]/div/div[2]/span");
+    private final static By ORDER_DURATION_SELECTION_FIELD = By.xpath(".//div[@class='Dropdown-arrow-wrapper']/span");
     //Кнопка выбора "сутки"
-    private final static By ORDER_DURATION_1DAY = By.xpath("//*[@id='root']/div/div[2]/div[2]/div[2]/div[2]/div[1]");
+    private final static By ORDER_DURATION_1DAY = By.xpath(".//div[text()='сутки']");
     //Кнопка для выбора "Цвет самоката" - "чёрный жемчуг"
     private final static By BLACK_COLOR_SELECTION_FIELD = By.cssSelector("#black");
     //Кнопка для выбора "Цвет самоката" - "серая безысходность"
     private final static By GREY_COLOR_SELECTION_FIELD = By.cssSelector("#grey");
     //Поле для ввода "Комментарий для курьера"
-    private final static By COMMENT_INPUT_FIELD = By.cssSelector("#root > div > div.Order_Content__bmtHS > div.Order_Form__17u6u > div.Input_InputContainer__3NykH > input");
+    private final static By COMMENT_INPUT_FIELD = By.xpath(".//input[@placeholder='Комментарий для курьера']");
     //Поле статуса заказа "Заказ оформлен" в всплывающем окне
-    private final static By ORDER_COMPLETE = By.xpath("//*[@id='root']/div/div[2]/div[5]/div[1]");
+    private final static By ORDER_COMPLETE = By.xpath(".//div[@class='Order_ModalHeader__3FDaJ']");
 
     public OrderPageSamokat(WebDriver driver) {
         this.driver = driver;
